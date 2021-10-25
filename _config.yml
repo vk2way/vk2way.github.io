@@ -1,1 +1,31 @@
-theme: jekyll-theme-minimal
+# Dependencies
+markdown:         kramdown
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            VK2WAY
+tagline:          'Jared Quinn'
+description:      "Hi I'm Jared, I'm an Autodidact Polymath. Geek. Coder. Technologist.  Welcome to the shack"
+url:              https://vk2way.github.io
+baseurl:          /
+
+author:
+  name:           'Jared Quinn (VK2WAY)'
+  url:            https://twitter.com/jaredquinn
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/vk2way/vk2way.github.io
+
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+  - redcarpet
+
