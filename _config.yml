@@ -28,4 +28,7 @@ plugins:
   - jekyll-paginate
   - jekyll-gist
   - redcarpet
+  - jekyll-admin
 
+jekyll_admin:
+  homepage: "pages"
