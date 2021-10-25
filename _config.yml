@@ -4,6 +4,8 @@ highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
+tag_permalink_style: pretty
+
 
 # Setup
 title:            VK2WAY
@@ -29,6 +31,24 @@ plugins:
   - jekyll-gist
   - redcarpet
   - jekyll-admin
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-katex
+  - jekyll-archives
+  - jekyll/tagging
 
 jekyll_admin:
   homepage: "pages"
+
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_feed_layout: tag_feed
+tag_feed_dir: tag
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
