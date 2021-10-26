@@ -1,6 +1,7 @@
 markdown:         kramdown
 highlighter:      rouge
 safe:             false
+destination:      docs
 
 # Permalinks
 permalink:        pretty
