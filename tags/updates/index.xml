@@ -1,31 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-
- <title>VK2WAY</title>
- <link href="https://vk2way.github.io/atom.xml" rel="self"/>
- <link href="https://vk2way.github.io/"/>
+ <title>Your Title - updates</title>
+ <link href="http://example.com/tags/updates/index.xml" rel="self"/>
+ <link href="http://example.com/tag/updates.html"/>
  <updated>2021-10-27T10:27:50+11:00</updated>
- <id>https://vk2way.github.io</id>
+ <id>http://example.com/tag/updates.html</id>
  <author>
-   <name>Jared Quinn (VK2WAY)</name>
-   <email></email>
+   <name>Author Here</name>
  </author>
-
- 
- <entry>
-   <title>My ADSB Setup</title>
-   <link href="https://vk2way.github.io/2021/10/26/adsb/"/>
-   <updated>2021-10-26T00:00:00+11:00</updated>
-   <id>https://vk2way.github.io/2021/10/26/adsb</id>
-   <content type="html">
-</content>
- </entry>
  
  <entry>
    <title>Welcome to vk2way.id.au</title>
-   <link href="https://vk2way.github.io/2021/10/25/welcome/"/>
+   <link href="http://example.com/2021/10/25/welcome/"/>
    <updated>2021-10-25T00:00:00+11:00</updated>
-   <id>https://vk2way.github.io/2021/10/25/welcome</id>
+   <id>http://example.com/2021/10/25/welcome</id>
    <content type="html">&lt;p&gt;Of course I need to start another project, it wouldn’t be a day in the life of without!   But here we are again at the start of something new.&lt;/p&gt;
 
 &lt;p&gt;I am patiently waiting out the time between sitting &amp;amp; passing the assessment (the Certificate of Proficiency required for the Foundation Level Amature Radio icense) and the Australian Communications &amp;amp; Media Authority granting my license and callsign.  As you can probably tell already the callsign that has been granted is &lt;strong&gt;VK2WAY&lt;/strong&gt; - Whiskey - Alpha - Yankee.&lt;/p&gt;
@@ -34,5 +22,4 @@
 </content>
  </entry>
  
-
 </feed>
