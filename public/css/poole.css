@@ -440,7 +440,7 @@ a.pagination-item:hover {
 }
 
 #tag-cloud a { border-radius: 15px; padding: 10px 18px; position: relative; text-decoration: none; 
-	background-color: #ececec; color: #333; 
+	background-color: #ececec; color: #333;  margin-right: 12px; margin-bottom: 15px; display: inline-block;
 }
 #tag-cloud a.active { background-color: #202020; color: white; }
 #tag-cloud a:hover  { background-color: lightblue; color: #333; }
@@ -453,3 +453,6 @@ a.pagination-item:hover {
   background: red;
   color: white;
 }
+.post-tags a { display: inline-block; background-color: #202020; color: white; margin-bottom: 4px; border-radius: 8px;; padding: 0 4px; text-decoration: none;}
+.post-tags a:hover { background-color: lightblue; color: #333; }
+
