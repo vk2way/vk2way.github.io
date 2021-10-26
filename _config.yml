@@ -1,6 +1,6 @@
-# Dependencies
 markdown:         kramdown
-highlighter:      pygments
+highlighter:      rouge
+safe:             false
 
 # Permalinks
 permalink:        pretty
@@ -11,7 +11,7 @@ tag_permalink_style: pretty
 title:            VK2WAY
 tagline:          'Jared Quinn'
 description:      "Hi I'm Jared, I'm an Autodidact Polymath. Geek. Coder. Technologist.  Welcome to the shack"
-url:              https://vk2way.github.io/
+url:              https://vk2way.github.io
 baseurl:          /
 
 author:
@@ -25,6 +25,7 @@ version:          2.1.0
 
 github:
   repo:           https://github.com/vk2way/vk2way.github.io
+
 
 plugins:
   - jekyll-paginate
