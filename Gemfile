@@ -22,3 +22,5 @@ gem "jekyll-katex", "~> 1.0"
 gem "jekyll-archives", "~> 2.2"
 
 gem "jekyll-tagging", "~> 1.1"
+
+gem "jekyll-postfiles", "~> 3.1"

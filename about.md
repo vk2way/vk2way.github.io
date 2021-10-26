@@ -1,30 +1,32 @@
 ---
 layout: page
-title: About
+title: About Me
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  Welcome, a little more about me and where you can find even more:
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+Have questions or suggestions? Feel free to:
 
-There are currently two themes built on Poole:
+* [open an issue on GitHub](https://github.com/vk2way/vk2way.github.io/issues/new) 
+* [Ask me on Twitter](https://twitter.com/jaredquinn).
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+## The Technology
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+* Site generated using [Jekyll](http://jekyllrb.com)
+* Developed and hosted for free on [GitHub Pages](https://pages.github.com)
+* Coded with [Vi IMproved](https://www.vim.org/), the only editor
 
-## Setup
+## The Small Print
 
-Some fun facts about the setup of this project include:
+<p class="message">
+All content on this site is licensed under the Creative Commons Attribution 4.0 International License.  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+</p>
+In summary this license grants everyone the right to:
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+* Share — copy and redistribute the material in any medium or format
+* Adapt — remix, transform, and build upon the material for any purpose, even commercially.
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+* Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
-Thanks for reading!

@@ -2,9 +2,12 @@
 layout: default
 ---
 
-<div class="post">
+<div class="post full-post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  <div class="post-meta">
+	  <span class="post-date">{{ page.date | date_to_string }}</span> 
+	  <span class="post-tags">{% if page.tags.size > 0 %} TAGS: {{ page.tags }}{% endif %}</span>
+  </div>
   {{ content }}
 </div>
 

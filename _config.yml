@@ -1,10 +1,9 @@
 markdown:         kramdown
 highlighter:      rouge
 safe:             false
-destination:      docs
 
 # Permalinks
-permalink:        pretty
+permalink:           /:year/:month/:day/:title/
 tag_permalink_style: pretty
 
 
@@ -37,15 +36,18 @@ plugins:
   - jekyll-sitemap
   - jekyll-katex
   - jekyll-archives
+  - jekyll-postfiles
   - jekyll/tagging
 
 jekyll_admin:
   homepage: "pages"
 
 tag_page_layout: tag_page
-tag_page_dir: tag
+tag_page_dir: tags
 tag_feed_layout: tag_feed
-tag_feed_dir: tag
+tag_feed_dir: tags
+tag_permalink_style: pretty
+
 
 defaults:
   -
