@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://vk2way.github.io/2021/10/25/welcome/</loc>
+<loc>https://vk2way.github.io/2021/10/23/welcome/</loc>
+<lastmod>2021-10-23T00:00:00+11:00</lastmod>
+</url>
+<url>
+<loc>https://vk2way.github.io/2021/10/24/the-bus/</loc>
+<lastmod>2021-10-24T00:00:00+11:00</lastmod>
+</url>
+<url>
+<loc>https://vk2way.github.io/2021/10/25/balcony-cam/</loc>
 <lastmod>2021-10-25T00:00:00+11:00</lastmod>
 </url>
 <url>
@@ -21,6 +29,27 @@
 <loc>https://vk2way.github.io/tags/updates/</loc>
 </url>
 <url>
+<loc>https://vk2way.github.io/tags/can-bus/</loc>
+</url>
+<url>
+<loc>https://vk2way.github.io/tags/smartbus/</loc>
+</url>
+<url>
+<loc>https://vk2way.github.io/tags/esp/</loc>
+</url>
+<url>
+<loc>https://vk2way.github.io/tags/iot/</loc>
+</url>
+<url>
+<loc>https://vk2way.github.io/tags/radio/</loc>
+</url>
+<url>
+<loc>https://vk2way.github.io/tags/sbc/</loc>
+</url>
+<url>
 <loc>https://vk2way.github.io/tags/adsb/</loc>
+</url>
+<url>
+<loc>https://vk2way.github.io/tags/pi/</loc>
 </url>
 </urlset>
