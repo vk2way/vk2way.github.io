@@ -1,11 +1,7 @@
 markdown:         kramdown
 highlighter:      rouge
 safe:             false
-
-# Permalinks
-permalink:           /:year/:month/:day/:title/
-tag_permalink_style: pretty
-
+debug:            true
 
 # Setup
 title:            VK2WAY
@@ -18,7 +14,6 @@ author:
   name:           'Jared Quinn (VK2WAY)'
   url:            https://twitter.com/jaredquinn
 
-paginate:         5
 
 # Custom vars
 version:          2.1.0
@@ -26,33 +21,43 @@ version:          2.1.0
 github:
   repo:           https://github.com/vk2way/vk2way.github.io
 
-
 plugins:
-  - jekyll-paginate
   - jekyll-gist
   - redcarpet
-  - jekyll-admin
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-katex
-  - jekyll-archives
   - jekyll-postfiles
-  - jekyll/tagging
+  - jekyll-paginate-v2
 
-jekyll_admin:
-  homepage: "pages"
+permalink: '/:year/:month/:title/'
 
-tag_page_layout: tag_page
-tag_page_dir: tags
-tag_feed_layout: tag_feed
-tag_feed_dir: tags
-tag_permalink_style: pretty
+collections:
+  posts:
+    output: true
 
+autopages:
+  enabled: true
+  categories:
+    enabled: false
+  collections:
+    enabled: false
+  tags:
+    debug: true
+    layouts:
+      - "auto_tag.html"
+    path: "/tags/:tag"
 
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
+pagination:
+  enabled: true
+  collection: 'posts'
+  per_page: 10
+  permalink: '/page/:num/' # Pages are index.html inside this folder (default)
+  title: ':title - :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  extension: html
+  indexpage: 'index'
+
 

@@ -7,3 +7,9 @@ tags:
 - sbc
 ---
 
+
+![image tooltip here]({{page.url}}/enclosure.jpg)
+
+
+
+

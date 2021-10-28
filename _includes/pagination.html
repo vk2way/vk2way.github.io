@@ -1,0 +1,20 @@
+
+
+{% if pager.total_pages > 1 %}
+<div class="pagination">
+  {% if pager.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}p{{pager.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if pager.previous_page %}
+    {% if pager.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}p{{pager.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
+{% endif %}

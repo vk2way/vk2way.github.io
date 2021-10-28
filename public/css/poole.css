@@ -48,7 +48,7 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', sans-serif; font-weight: 400; 
   font-size: 16px;
   line-height: 1.5;
 }
@@ -66,7 +66,7 @@ body {
 }
 
 a {
-  color: #7204fb;
+  color: #008b8b;
   text-decoration: none;
 }
 a strong {
@@ -80,7 +80,7 @@ a:focus {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+  font-family: 'Raleway', sans-serif; font-weight: 800; 
   line-height: 1.25;
   color: #313131;
   text-rendering: optimizeLegibility;
@@ -399,7 +399,6 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
 }
@@ -439,20 +438,43 @@ a.pagination-item:hover {
   }
 }
 
-#tag-cloud a { border-radius: 15px; padding: 10px 18px; position: relative; text-decoration: none; 
+#tag-cloud a { border-radius: 15px; padding: 4px 18px; position: relative; text-decoration: none; 
 	background-color: #ececec; color: #333;  margin-right: 12px; margin-bottom: 15px; display: inline-block;
 }
 #tag-cloud a.active { background-color: #202020; color: white; }
 #tag-cloud a:hover  { background-color: lightblue; color: #333; }
+
 #tag-cloud a .badge { position:absolute; 
   top: -10px;
   right: -10px;
   padding: 5px 10px;
   font-size: 50%;
   border-radius: 50%;
-  background: red;
-  color: white;
+  background: lightblue;
+  color: black;
+
 }
-.post-tags a { display: inline-block; background-color: #202020; color: white; margin-bottom: 4px; border-radius: 8px;; padding: 0 4px; text-decoration: none;}
+.post-tags a { display: inline-block; background-color: #ececec; color: #333; margin-bottom: 4px; 
+		border-radius: 8px;; padding: 0 4px; text-decoration: none;}
 .post-tags a:hover { background-color: lightblue; color: #333; }
 
+.post-list .post-title { background-color: #eee; color: #333; 
+		border-radius: 0 20px 20px 0; padding: 2px 20px; margin: 0;
+		line-height:1.4em; }
+
+.post-list .post-title a { color: #333; }
+.post-list .post-date { background-color: lightblue; color: #333; border-radius: 0 0 20px 20px; padding: 2px 20px; margin-top: 10px;  }
+
+.post-list .post-excerpt h1,
+.post-list .post-excerpt h2,
+.post-list .post-excerpt h3,
+.post-list .post-excerpt h4,
+.post-list .post-excerpt h5 { font-size: 1.2em; }
+.post-list .post-excerpt img { display: none; }
+
+
+
+.post-body h1 { font-size: 1.3em; font-weight: 600; }
+.post-body h2 { font-size: 1.2em; font-weight: 600; }
+.post-body h3 { font-size: 1.1em; font-weight: 600; }
+.post-body h4 { font-size: 1.0em; font-weight: 600; }
