@@ -1,9 +1,6 @@
-markdown:         kramdown
-highlighter:      rouge
-safe:             false
-debug:            true
 
-# Setup
+version:          2.1.0
+
 title:            VK2WAY
 tagline:          'Jared Quinn'
 description:      "Hi I'm Jared, I'm an Autodidact Polymath. Geek. Coder. Technologist.  Welcome to the shack"
@@ -14,9 +11,13 @@ author:
   name:           'Jared Quinn (VK2WAY)'
   url:            https://twitter.com/jaredquinn
 
+markdown:         kramdown
+highlighter:      rouge
+safe:             false
+debug:            true
 
-# Custom vars
-version:          2.1.0
+sass:
+  style: compressed
 
 github:
   repo:           https://github.com/vk2way/vk2way.github.io
@@ -28,7 +29,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-katex
   - jekyll-postfiles
-  - jekyll-paginate-v2
+  - jekyll-paginate
+#  - jekyll-paginate-v2
+#
+theme:            jekyll-theme-chirpy
+theme_mode:       dark
 
 permalink: '/:year/:month/:title/'
 
@@ -36,28 +41,37 @@ collections:
   posts:
     output: true
 
-autopages:
-  enabled: true
-  categories:
-    enabled: false
-  collections:
-    enabled: false
-  tags:
-    debug: true
-    layouts:
-      - "auto_tag.html"
-    path: "/tags/:tag"
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
 
-pagination:
-  enabled: true
-  collection: 'posts'
-  per_page: 10
-  permalink: '/page/:num/' # Pages are index.html inside this folder (default)
-  title: ':title - :num of :max'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  extension: html
-  indexpage: 'index'
-
+#autopages:
+#  enabled: true
+#  categories:
+#    enabled: false
+#  collections:
+#    enabled: false
+#  tags:
+#    debug: true
+#    layouts:
+#      - "auto_tag.html"
+#    path: "/tags/:tag"
+#
+#pagination:
+#  enabled: true
+#  collection: 'posts'
+#  per_page: 10
+#  permalink: '/page/:num/' # Pages are index.html inside this folder (default)
+#  title: ':title - :num of :max'
+#  limit: 0
+#  sort_field: 'date'
+#  sort_reverse: true
+#  extension: html
+#  indexpage: 'index'
+#
 
