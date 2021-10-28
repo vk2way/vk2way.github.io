@@ -438,13 +438,13 @@ a.pagination-item:hover {
   }
 }
 
-#tag-cloud a { border-radius: 15px; padding: 4px 18px; position: relative; text-decoration: none; 
+.tag-cloud a { border-radius: 15px; padding: 4px 18px; position: relative; text-decoration: none; 
 	background-color: #ececec; color: #333;  margin-right: 12px; margin-bottom: 15px; display: inline-block;
 }
-#tag-cloud a.active { background-color: #202020; color: white; }
-#tag-cloud a:hover  { background-color: lightblue; color: #333; }
+.tag-cloud a.active { background-color: #202020; color: white; }
+.tag-cloud a:hover  { background-color: lightblue; color: #333; }
 
-#tag-cloud a .badge { position:absolute; 
+.tag-cloud a .badge { position:absolute; 
   top: -10px;
   right: -10px;
   padding: 5px 10px;
@@ -478,3 +478,6 @@ a.pagination-item:hover {
 .post-body h2 { font-size: 1.2em; font-weight: 600; }
 .post-body h3 { font-size: 1.1em; font-weight: 600; }
 .post-body h4 { font-size: 1.0em; font-weight: 600; }
+
+a.project { background-color: lightblue; color: black; }
+
