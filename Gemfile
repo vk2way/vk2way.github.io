@@ -8,6 +8,9 @@ group :test do
   gem "html-proofer", "~> 3.18"
 end
 
+gem "nokogiri", ">= 1.12.5"
+
+
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
