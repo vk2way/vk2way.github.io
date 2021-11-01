@@ -1,7 +1,7 @@
 ---
 title: Welcome to my Smart Home
 layout: post
-category: smarthome
+categories: [Smart Home]
 tags:
 - smarthome
 - homeassistant

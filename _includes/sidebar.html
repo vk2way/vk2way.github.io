@@ -1,34 +1,91 @@
-<div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <h1>
-        <a href="{{ site.baseurl }}">
-          {{ site.title }}
-        </a>
-      </h1>
-      <p class="lead">{{ site.description }}</p>
-    </div>
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.menuarea == "home" %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
-      <a class="sidebar-nav-item{% if page.menuarea == "tag" %} active{% endif %}" href="{{ site.baseurl }}tags">Tags</a>
+<!--
+  The Side Bar
+-->
 
-      {% assign pages_list = site.pages %}
-      {% for node in pages_list %}
-        {% if node.title != null %}
-	  {% if node.layout == "page" %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-          {% endif %}
+<div id="sidebar" class="d-flex flex-column align-items-end" lang="{{lang}}">
+  <div class="profile-wrapper text-center">
+    <div id="avatar">
+      <a href="{{ '/' | relative_url }}" alt="avatar" class="mx-auto">
+        {% if site.avatar != '' and site.avatar %}
+          {% capture avatar_url %}
+            {%- if site.avatar contains '://' -%}
+              {{ site.avatar }}
+            {%- elsif site.img_cdn != '' and site.img_cdn -%}
+              {{ site.avatar | prepend: site.img_cdn }}
+            {%- else -%}
+              {{ site.avatar | relative_url }}
+            {%- endif -%}
+          {% endcapture %}
+          <img src="{{ avatar_url }}" alt="avatar" onerror="this.style.display='none'">
         {% endif %}
-      {% endfor %}
+      </a>
+    </div>
 
-    </nav>
+    <div class="site-title mt-3">
+      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    </div>
+    <div class="site-subtitle font-italic">{{ site.tagline }}</div>
 
+  </div><!-- .profile-wrapper -->
 
-    <p style="font-size:50%;">
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">Site source GitHub project</a><br/>
-    &copy; {{ site.time | date: '%Y' }}. All rights reserved.<br/>
-    All content on this site is licensed under the<br>
-    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br/>
-    </p>
-  </div>
-</div>
+  <ul class="w-100">
+
+    <!-- home -->
+    <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
+      <a href="{{ '/' | relative_url }}" class="nav-link">
+        <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
+        <span>{{ site.data.locales[lang].tabs.home | upcase }}</span>
+      </a>
+    </li>
+    <!-- the real tabs -->
+    {% for tab in site.tabs %}
+    <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
+      <a href="{{ tab.url | relative_url }}" class="nav-link">
+        <i class="fa-fw {{ tab.icon }} ml-xl-3 mr-xl-3 unloaded"></i>
+        {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
+
+        <span>{{ site.data.locales[lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
+      </a>
+    </li> <!-- .nav-item -->
+    {% endfor %}
+
+  </ul> <!-- ul.nav.flex-column -->
+
+  <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+
+    {% for entry in site.data.contact %}
+      {% capture url %}
+        {%- if entry.type == 'github' -%}
+          https://github.com/{{ site.github.username }}
+        {%- elsif entry.type == 'twitter' -%}
+          https://twitter.com/{{ site.twitter.username }}
+        {%- elsif entry.type == 'email' -%}
+          {% assign email = site.social.email | split: '@' %}
+          javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
+        {%- elsif entry.type == 'rss' -%}
+          {{ "/feed.xml" | relative_url }}
+        {%- else -%}
+          {{ entry.url }}
+        {%- endif -%}
+      {% endcapture %}
+
+      {% if url %}
+      <a href="{{ url }}" aria-label="{{ entry.type }}"
+        {% unless site.theme_mode %}class="order-{{ forloop.index | plus: 2 }}"{% endunless %}
+        {% unless entry.noblank %}target="_blank" rel="noopener"{% endunless %}>
+        <i class="{{ entry.icon }}"></i>
+      </a>
+      {% endif %}
+
+    {% endfor %}
+
+    {% unless site.theme_mode %}
+      {% if site.data.contact.size > 0 %}
+        <span class="icon-border order-2"></span>
+      {% endif %}
+
+    {% endunless %}
+
+  </div> <!-- .sidebar-bottom -->
+
+</div><!-- #sidebar -->

@@ -2,21 +2,26 @@
 
 source "https://rubygems.org"
 
-git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
+gemspec
 
-# gem "rails"
+group :test do
+  gem "html-proofer", "~> 3.18"
+end
 
-gem "jekyll", "~> 4.2"
+# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
+# and associated library.
+install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
+  gem "tzinfo", "~> 1.2"
+  gem "tzinfo-data"
+end
+
+# Performance-booster for watching directories on Windows
+gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
+
+# Jekyll <= 4.2.0 compatibility with Ruby 3.0
+gem "webrick", "~> 1.7"
+
 
 group :jekyll_plugins do
-
-  gem "redcarpet", "~> 3.5"
-  gem "jekyll-gist", "~> 1.5"
-
-  gem "jekyll-feed", "~> 0.15.1"
-  gem "jekyll-sitemap", "~> 1.4"
-
-  gem "jekyll-katex", "~> 1.0"
-  gem "jekyll-postfiles", "~> 3.1"
-  gem "jekyll-paginate-v2", "~> 3.0"
+  gem 'jekyll-postfiles'
 end

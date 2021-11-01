@@ -1,41 +1,101 @@
+# The Site Configuration
 
-version:          2.1.0
+# Import the theme
+theme: jekyll-theme-chirpy
+theme_mode: dark
 
-title:            VK2WAY
-tagline:          'Jared Quinn'
-description:      "Hi I'm Jared, I'm an Autodidact Polymath. Geek. Coder. Technologist.  Welcome to the shack"
-url:              https://vk2way.github.io
-baseurl:          /
+baseurl: ''
+lang: en
+timezone: Australia/Sydney
 
-author:
-  name:           'Jared Quinn (VK2WAY)'
-  url:            https://twitter.com/jaredquinn
+title: VK2WAY
+tagline: Jared Quinn
+description:
 
-markdown:         kramdown
-highlighter:      rouge
-safe:             false
-debug:            true
+url: 'https://vk2way.id.au'
+
+social:
+  # Change to your full name.
+  # It will be displayed as the default author of the posts and the copyright owner in the Footer
+  name: Jared Quinn
+  email: cq@vk2way.id.au
+  links:
+    # The first element serves as the copyright owner's link
+    - https://twitter.com/jaredquinn   # change to your twitter homepage
+    - https://github.com/jaredquinn    # change to your github homepage
+    - https://www.linkedin.com/in/jaredquinn
+
+google_site_verification: google_meta_tag_verification
+google_analytics:
+  id: 'G-HJW3RZNZYR'              
+
+
+#img_cdn: 'https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images@0a003683c0c3ca549d12c309f9b3e03ea20981e5'
+avatar: '/assets/img/me.jpg'
+toc: true
+
+disqus:
+  comments: false  # boolean type, the global switch for posts comments.
+  shortname: ''    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+
+paginate: 10
+
+# ------------ The following options are not recommended to be modified ------------------
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+
+defaults:
+  -
+    scope:
+      path: ''          # An empty string here means all files in the project
+      type: posts
+    values:
+      layout: post
+      comments: true    # Enable comments in posts.
+      toc: true         # Display TOC column in posts.
+      # DO NOT modify the following parameter unless you are confident enough
+      # to update the code of all other post links in this project.
+      permalink: /posts/:title/
+  -
+    scope:
+      path: _drafts
+    values:
+      comments: false
+  -
+    scope:
+      path: ''
+      type: tabs             # see `site.collections`
+    values:
+      layout: page
+      permalink: /:title/
+      dynamic_title: true    # Hide title in mobile screens.
 
 sass:
   style: compressed
 
-github:
-  repo:           https://github.com/vk2way/vk2way.github.io
-
-plugins:
-  - jekyll-gist
-  - redcarpet
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-katex
-  - jekyll-postfiles
-  - jekyll-paginate-v2
-
-permalink: '/:year/:month/:title/'
-
-collections:
-  posts:
-    output: true
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
 
 jekyll-archives:
   enabled: [categories, tags]
@@ -46,28 +106,18 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
-autopages:
-  enabled: true
-  categories:
-    enabled: false
-  collections:
-    enabled: false
-  tags:
-    debug: true
-    layouts:
-      - "auto_tag.html"
-    path: "/tags/:tag"
+exclude:
+  - '*.gem'
+  - '*.gemspec'
+  - tools
+  - docs
+  - README.md
+  - LICENSE
+  - gulpfile.js
+  - node_modules
+  - package.json
 
-pagination:
-  enabled: true
-  collection: 'posts'
-  per_page: 10
-  permalink: '/page/:num/' # Pages are index.html inside this folder (default)
-  title: ':title - :num of :max'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  extension: html
-  indexpage: 'index'
 
+plugins:
+  - jekyll-postfiles
 

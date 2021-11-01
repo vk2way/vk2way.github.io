@@ -1,11 +1,10 @@
 ---
 title: The Balcony Radio and Camera
 layout: post
-category: computers
+categories: [Radio, ADS-B]
 tags:
-- project:listen
-- radio
 - sbc
+- sdr
 ---
 
 
