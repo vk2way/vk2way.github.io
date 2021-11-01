@@ -1,1 +1,5 @@
-Sitemap: https://vk2way.github.io/sitemap.xml
+User-agent: *
+
+Disallow: /norobots/
+
+Sitemap: https://vk2way.id.au/sitemap.xml

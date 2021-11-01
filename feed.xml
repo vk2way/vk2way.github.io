@@ -1,38 +1,222 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://vk2way.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vk2way.github.io/" rel="alternate" type="text/html" /><updated>2021-10-27T10:58:24+11:00</updated><id>https://vk2way.github.io/feed.xml</id><title type="html">VK2WAY</title><subtitle>Hi I'm Jared, I'm an Autodidact Polymath. Geek. Coder. Technologist.  Welcome to the shack</subtitle><author><name>Jared Quinn (VK2WAY)</name></author><entry><title type="html">My ADSB Setup</title><link href="https://vk2way.github.io/2021/10/26/adsb/" rel="alternate" type="text/html" title="My ADSB Setup" /><published>2021-10-26T00:00:00+11:00</published><updated>2021-10-26T00:00:00+11:00</updated><id>https://vk2way.github.io/2021/10/26/adsb</id><content type="html" xml:base="https://vk2way.github.io/2021/10/26/adsb/"></content><author><name>Jared Quinn (VK2WAY)</name></author><category term="radio" /><category term="adsb" /><category term="sbc" /><category term="pi" /><summary type="html"></summary></entry><entry><title type="html">The Balcony Radio and Camera</title><link href="https://vk2way.github.io/2021/10/25/balcony-cam/" rel="alternate" type="text/html" title="The Balcony Radio and Camera" /><published>2021-10-25T00:00:00+11:00</published><updated>2021-10-25T00:00:00+11:00</updated><id>https://vk2way.github.io/2021/10/25/balcony-cam</id><content type="html" xml:base="https://vk2way.github.io/2021/10/25/balcony-cam/"></content><author><name>Jared Quinn (VK2WAY)</name></author><category term="computers" /><category term="radio" /><category term="sbc" /><summary type="html"></summary></entry><entry><title type="html">Introducing The Dirge (A CAN Bus)</title><link href="https://vk2way.github.io/2021/10/24/the-bus/" rel="alternate" type="text/html" title="Introducing The Dirge (A CAN Bus)" /><published>2021-10-24T00:00:00+11:00</published><updated>2021-10-24T00:00:00+11:00</updated><id>https://vk2way.github.io/2021/10/24/the-bus</id><content type="html" xml:base="https://vk2way.github.io/2021/10/24/the-bus/">&lt;h1 id=&quot;dirges-bus&quot;&gt;Dirge’s Bus&lt;/h1&gt;
 
-&lt;p&gt;Intro…&lt;/p&gt;
 
-&lt;h1 id=&quot;the-dirge-sensor&quot;&gt;The “Dirge” Sensor&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://vk2way.id.au/</id>
+  <title>VK2WAY</title>
+  <subtitle></subtitle>
+  <updated>2021-11-02T02:31:59+11:00</updated>
+  <author>
+    <name>Jared Quinn</name>
+    <uri>https://vk2way.id.au/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://vk2way.id.au/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="https://vk2way.id.au/"/>
+  <generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator>
+  <rights> © 2021 Jared Quinn </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/jaredquinn/dirge-iot&quot;&gt;The Sensor Project on GitHub&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;features&quot;&gt;Features&lt;/h2&gt;
+  
+  <entry>
+    <title>Welcome to my Smart Home</title>
+    <link href="https://vk2way.id.au/posts/homeassistant/" rel="alternate" type="text/html" title="Welcome to my Smart Home" />
+    <published>2021-10-27T00:00:00+11:00</published>
+  
+    <updated>2021-10-27T00:00:00+11:00</updated>
+  
+    <id>https://vk2way.id.au/posts/homeassistant/</id>
+    <content src="https://vk2way.id.au/posts/homeassistant/" />
+    <author>
+      <name>Jared Quinn</name>
+    </author>
 
-&lt;ul&gt;
-  &lt;li&gt;TPS54202 Based 12V to 5V Converter&lt;/li&gt;
-  &lt;li&gt;Dual AO4407A 30V 12A Switching channels (12V SW1 &amp;amp; SW2)&lt;/li&gt;
-  &lt;li&gt;12V Input Voltage Monitoring&lt;/li&gt;
-  &lt;li&gt;AHT20 Temperature/Humidity Sensor&lt;/li&gt;
-  &lt;li&gt;Jumper selectable Supply MCU 5V from USB, 5V BUS or 12V Supply&lt;/li&gt;
-  &lt;li&gt;Enable/Disable 12V to 5V buck jumper&lt;/li&gt;
-  &lt;li&gt;MCP2562 / MCP2515 5V CAN (Controller Area Network) Bus Driver&lt;/li&gt;
-  &lt;li&gt;4 Normally Open Button Inputs (supports momentary &amp;amp; toggles)&lt;/li&gt;
-  &lt;li&gt;2 TTL (3V3) Output Signals (not for power supply)&lt;/li&gt;
-  &lt;li&gt;TXB0104PWR IC 4bit Bi-directional Level Shifter
-    &lt;ul&gt;
-      &lt;li&gt;UART TX / RX&lt;/li&gt;
-      &lt;li&gt;LED Pixel Pusher 5V Data CH1/CH2&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;6 DIP Switches
-    &lt;ul&gt;
-      &lt;li&gt;1-4=Config/Multiplexed with BTN INs&lt;/li&gt;
-      &lt;li&gt;5=Enable 5V Level Shifter PXL/UARTs&lt;/li&gt;
-      &lt;li&gt;6=Terminate CAN bus with 120Ohm&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jared Quinn (VK2WAY)</name></author><category term="electronics" /><category term="can-bus" /><category term="smartbus" /><category term="esp" /><category term="iot" /><summary type="html">Dirge’s Bus</summary></entry><entry><title type="html">Welcome to vk2way.id.au</title><link href="https://vk2way.github.io/2021/10/23/welcome/" rel="alternate" type="text/html" title="Welcome to vk2way.id.au" /><published>2021-10-23T00:00:00+11:00</published><updated>2021-10-23T00:00:00+11:00</updated><id>https://vk2way.github.io/2021/10/23/welcome</id><content type="html" xml:base="https://vk2way.github.io/2021/10/23/welcome/">&lt;p&gt;Of course I need to start another project, it wouldn’t be a day in the life of without!   But here we are again at the start of something new.&lt;/p&gt;
+  
+    
+    <category term="Smart Home" />
+    
+  
 
-&lt;p&gt;I am patiently waiting out the time between sitting &amp;amp; passing the assessment (the Certificate of Proficiency required for the Foundation Level Amature Radio icense) and the Australian Communications &amp;amp; Media Authority granting my license and callsign.  As you can probably tell already the callsign that has been granted is &lt;strong&gt;VK2WAY&lt;/strong&gt; - Whiskey - Alpha - Yankee.&lt;/p&gt;
+  
+    <summary>
+      
 
-&lt;p&gt;I decided to put this blog up, firstly because it’s been years since I regularly commited to writing regularly, but more importantly because I want to collect information on all the related projects in one place.   This will include electronics, programming, radio and just about anything else that takes my fancy.&lt;/p&gt;</content><author><name>Jared Quinn (VK2WAY)</name></author><category term="general" /><category term="updates" /><summary type="html">Of course I need to start another project, it wouldn’t be a day in the life of without! But here we are again at the start of something new.</summary></entry></feed>
+
+
+
+
+      
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>My ADSB Setup</title>
+    <link href="https://vk2way.id.au/posts/adsb/" rel="alternate" type="text/html" title="My ADSB Setup" />
+    <published>2021-10-26T00:00:00+11:00</published>
+  
+    <updated>2021-10-26T00:00:00+11:00</updated>
+  
+    <id>https://vk2way.id.au/posts/adsb/</id>
+    <content src="https://vk2way.id.au/posts/adsb/" />
+    <author>
+      <name>Jared Quinn</name>
+    </author>
+
+  
+    
+    <category term="Radio" />
+    
+    <category term="ADS-B" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>The Balcony Radio and Camera</title>
+    <link href="https://vk2way.id.au/posts/balcony-cam/" rel="alternate" type="text/html" title="The Balcony Radio and Camera" />
+    <published>2021-10-25T00:00:00+11:00</published>
+  
+    <updated>2021-10-25T00:00:00+11:00</updated>
+  
+    <id>https://vk2way.id.au/posts/balcony-cam/</id>
+    <content src="https://vk2way.id.au/posts/balcony-cam/" />
+    <author>
+      <name>Jared Quinn</name>
+    </author>
+
+  
+    
+    <category term="Radio" />
+    
+    <category term="ADS-B" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Introducing The Dirge (A CAN Bus)</title>
+    <link href="https://vk2way.id.au/posts/the-bus/" rel="alternate" type="text/html" title="Introducing The Dirge (A CAN Bus)" />
+    <published>2021-10-24T00:00:00+11:00</published>
+  
+    <updated>2021-10-24T00:00:00+11:00</updated>
+  
+    <id>https://vk2way.id.au/posts/the-bus/</id>
+    <content src="https://vk2way.id.au/posts/the-bus/" />
+    <author>
+      <name>Jared Quinn</name>
+    </author>
+
+  
+    
+    <category term="Electronics" />
+    
+    <category term="The Dirge CAN Bus Module" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Dirge’s Bus
+
+Intro…
+
+The “Dirge” Sensor
+
+The Sensor Project on GitHub
+
+Features
+
+
+  TPS54202 Based 12V to 5V Converter
+  Dual AO4407A 30V 12A Switching channels (12V SW1 &amp;amp; SW2)
+  12V Input Voltage Monitoring
+  AHT20 Temperature/Humidity Sensor
+  Jumper selectable Supply MCU 5V from USB, 5V BUS or 12V Supply
+  Enable/Disable 12V to 5V buck jumper
+  MCP2562 / MCP2515 5V CAN (Controller Area N...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Welcome to vk2way.id.au</title>
+    <link href="https://vk2way.id.au/posts/welcome/" rel="alternate" type="text/html" title="Welcome to vk2way.id.au" />
+    <published>2021-10-23T00:00:00+11:00</published>
+  
+    <updated>2021-10-23T00:00:00+11:00</updated>
+  
+    <id>https://vk2way.id.au/posts/welcome/</id>
+    <content src="https://vk2way.id.au/posts/welcome/" />
+    <author>
+      <name>Jared Quinn</name>
+    </author>
+
+  
+    
+    <category term="General" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Of course I need to start another project, it wouldn’t be a day in the life of without!   But here we are again at the start of something new.
+
+I am patiently waiting out the time between sitting &amp;amp; passing the assessment (the Certificate of Proficiency required for the Foundation Level Amature Radio icense) and the Australian Communications &amp;amp; Media Authority granting my license and call...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
