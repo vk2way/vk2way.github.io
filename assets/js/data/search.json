@@ -1,0 +1,79 @@
+[
+  
+  {
+    "title": "Welcome to my Smart Home",
+    "url": "/posts/homeassistant/",
+    "categories": "Smart Home",
+    "tags": "smarthome, homeassistant",
+    "date": "2021-10-27 00:00:00 +1100",
+    
+
+
+
+
+
+    "snippet": ""
+  },
+  
+  {
+    "title": "My ADSB Setup",
+    "url": "/posts/adsb/",
+    "categories": "Radio, ADS-B",
+    "tags": "sbc, pi, sdr",
+    "date": "2021-10-26 00:00:00 +1100",
+    
+
+
+
+
+
+    "snippet": ""
+  },
+  
+  {
+    "title": "The Balcony Radio and Camera",
+    "url": "/posts/balcony-cam/",
+    "categories": "Radio, ADS-B",
+    "tags": "sbc, sdr",
+    "date": "2021-10-25 00:00:00 +1100",
+    
+
+
+
+
+
+    "snippet": ""
+  },
+  
+  {
+    "title": "Introducing The Dirge (A CAN Bus)",
+    "url": "/posts/the-bus/",
+    "categories": "Electronics, The Dirge CAN Bus Module",
+    "tags": "can, esp, iot",
+    "date": "2021-10-24 00:00:00 +1100",
+    
+
+
+
+
+
+    "snippet": "Dirge’s BusIntro…The “Dirge” SensorThe Sensor Project on GitHubFeatures  TPS54202 Based 12V to 5V Converter  Dual AO4407A 30V 12A Switching channels (12V SW1 &amp;amp; SW2)  12V Input Voltage Monitoring  AHT20 Temperature/Humidity Sensor  Jumper selectable Supply MCU 5V from USB, 5V BUS or 12V Supply  Enable/Disable 12V to 5V buck jumper  MCP2562 / MCP2515 5V CAN (Controller Area Network) Bus Driver  4 Normally Open Button Inputs (supports momentary &amp;amp; toggles)  2 TTL (3V3) Output Signals (not for power supply)  TXB0104PWR IC 4bit Bi-directional Level Shifter          UART TX / RX      LED Pixel Pusher 5V Data CH1/CH2        6 DIP Switches          1-4=Config/Multiplexed with BTN INs      5=Enable 5V Level Shifter PXL/UARTs      6=Terminate CAN bus with 120Ohm      "
+  },
+  
+  {
+    "title": "Welcome to vk2way.id.au",
+    "url": "/posts/welcome/",
+    "categories": "General",
+    "tags": "website",
+    "date": "2021-10-23 00:00:00 +1100",
+    
+
+
+
+
+
+    "snippet": "Of course I need to start another project, it wouldn’t be a day in the life of without!   But here we are again at the start of something new.I am patiently waiting out the time between sitting &amp;amp; passing the assessment (the Certificate of Proficiency required for the Foundation Level Amature Radio icense) and the Australian Communications &amp;amp; Media Authority granting my license and callsign.  As you can probably tell already the callsign that has been granted is VK2WAY - Whiskey - Alpha - Yankee.I decided to put this blog up, firstly because it’s been years since I regularly commited to writing regularly, but more importantly because I want to collect information on all the related projects in one place.   This will include electronics, programming, radio and just about anything else that takes my fancy."
+  }
+  
+]
+
