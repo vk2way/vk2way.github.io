@@ -4,7 +4,7 @@
   <id>https://vk2way.id.au/</id>
   <title>VK2WAY</title>
   <subtitle></subtitle>
-  <updated>2021-11-02T02:31:59+11:00</updated>
+  <updated>2021-11-08T20:07:03+11:00</updated>
   <author>
     <name>Jared Quinn</name>
     <uri>https://vk2way.id.au/</uri>
@@ -17,6 +17,125 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>PrettyFly ADS-B Reporting</title>
+    <link href="https://vk2way.id.au/posts/prettyfly/" rel="alternate" type="text/html" title="PrettyFly ADS-B Reporting" />
+    <published>2021-11-02T00:00:00+11:00</published>
+  
+    <updated>2021-11-02T00:00:00+11:00</updated>
+  
+    <id>https://vk2way.id.au/posts/prettyfly/</id>
+    <content src="https://vk2way.id.au/posts/prettyfly/" />
+    <author>
+      <name>Jared Quinn</name>
+    </author>
+
+  
+    
+    <category term="Radio" />
+    
+    <category term="ADS-B" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Aquarium Monitor ESP8266/MQTT</title>
+    <link href="https://vk2way.id.au/posts/aqua-mon/" rel="alternate" type="text/html" title="Aquarium Monitor ESP8266/MQTT" />
+    <published>2021-10-29T00:00:00+11:00</published>
+  
+    <updated>2021-10-29T00:00:00+11:00</updated>
+  
+    <id>https://vk2way.id.au/posts/aqua-mon/</id>
+    <content src="https://vk2way.id.au/posts/aqua-mon/" />
+    <author>
+      <name>Jared Quinn</name>
+    </author>
+
+  
+    
+    <category term="Electronics" />
+    
+    <category term="Smarthome" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Take Full Control of your Smart Home</title>
+    <link href="https://vk2way.id.au/posts/take-full-control/" rel="alternate" type="text/html" title="Take Full Control of your Smart Home" />
+    <published>2021-10-28T00:00:00+11:00</published>
+  
+    <updated>2021-10-28T00:00:00+11:00</updated>
+  
+    <id>https://vk2way.id.au/posts/take-full-control/</id>
+    <content src="https://vk2way.id.au/posts/take-full-control/" />
+    <author>
+      <name>Jared Quinn</name>
+    </author>
+
+  
+    
+    <category term="Smart Home" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Infracoders
+
+
+
+Projects Mentioned
+
+
+  Welcome to my Smart Home
+  Aquarium Monitoring ESP8266
+
+
+
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -85,133 +204,6 @@
 
       
 
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>The Balcony Radio and Camera</title>
-    <link href="https://vk2way.id.au/posts/balcony-cam/" rel="alternate" type="text/html" title="The Balcony Radio and Camera" />
-    <published>2021-10-25T00:00:00+11:00</published>
-  
-    <updated>2021-10-25T00:00:00+11:00</updated>
-  
-    <id>https://vk2way.id.au/posts/balcony-cam/</id>
-    <content src="https://vk2way.id.au/posts/balcony-cam/" />
-    <author>
-      <name>Jared Quinn</name>
-    </author>
-
-  
-    
-    <category term="Radio" />
-    
-    <category term="ADS-B" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-
-
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Introducing The Dirge (A CAN Bus)</title>
-    <link href="https://vk2way.id.au/posts/the-bus/" rel="alternate" type="text/html" title="Introducing The Dirge (A CAN Bus)" />
-    <published>2021-10-24T00:00:00+11:00</published>
-  
-    <updated>2021-10-24T00:00:00+11:00</updated>
-  
-    <id>https://vk2way.id.au/posts/the-bus/</id>
-    <content src="https://vk2way.id.au/posts/the-bus/" />
-    <author>
-      <name>Jared Quinn</name>
-    </author>
-
-  
-    
-    <category term="Electronics" />
-    
-    <category term="The Dirge CAN Bus Module" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Dirge’s Bus
-
-Intro…
-
-The “Dirge” Sensor
-
-The Sensor Project on GitHub
-
-Features
-
-
-  TPS54202 Based 12V to 5V Converter
-  Dual AO4407A 30V 12A Switching channels (12V SW1 &amp;amp; SW2)
-  12V Input Voltage Monitoring
-  AHT20 Temperature/Humidity Sensor
-  Jumper selectable Supply MCU 5V from USB, 5V BUS or 12V Supply
-  Enable/Disable 12V to 5V buck jumper
-  MCP2562 / MCP2515 5V CAN (Controller Area N...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Welcome to vk2way.id.au</title>
-    <link href="https://vk2way.id.au/posts/welcome/" rel="alternate" type="text/html" title="Welcome to vk2way.id.au" />
-    <published>2021-10-23T00:00:00+11:00</published>
-  
-    <updated>2021-10-23T00:00:00+11:00</updated>
-  
-    <id>https://vk2way.id.au/posts/welcome/</id>
-    <content src="https://vk2way.id.au/posts/welcome/" />
-    <author>
-      <name>Jared Quinn</name>
-    </author>
-
-  
-    
-    <category term="General" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Of course I need to start another project, it wouldn’t be a day in the life of without!   But here we are again at the start of something new.
-
-I am patiently waiting out the time between sitting &amp;amp; passing the assessment (the Certificate of Proficiency required for the Foundation Level Amature Radio icense) and the Australian Communications &amp;amp; Media Authority granting my license and call...
     </summary>
   
 
