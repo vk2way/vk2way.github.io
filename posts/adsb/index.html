@@ -49,7 +49,7 @@
 <meta property="twitter:title" content="My ADSB Setup" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"description":"This is the second generation of ADS-B receiver running at my station; the first generation was located on my balcony and not capable of 24x7 operation; this has since been relocated with a dedicated Orange Pi, reciever and antenna.","@type":"BlogPosting","headline":"My ADSB Setup","dateModified":"2021-10-26T00:00:00+11:00","datePublished":"2021-10-26T00:00:00+11:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://vk2way.id.au/posts/adsb/"},"url":"https://vk2way.id.au/posts/adsb/","@context":"https://schema.org"}</script>
+{"description":"This is the second generation of ADS-B receiver running at my station; the first generation was located on my balcony and not capable of 24x7 operation; this has since been relocated with a dedicated Orange Pi, reciever and antenna.","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://vk2way.id.au/posts/adsb/"},"headline":"My ADSB Setup","url":"https://vk2way.id.au/posts/adsb/","dateModified":"2021-10-26T00:00:00+11:00","datePublished":"2021-10-26T00:00:00+11:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -467,6 +467,73 @@
       
 
     
+      
+      
+
+      
+
+      
+
+    
+      
+      
+
+      
+
+      
+
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+
+      
+
+    
+      
+      
+
+      
+
+      
+
+    
+      
+      
+
+      
+
+      
+
+    
+      
+      
+
+      
+
+      
+
+    
+      
+      
+
+      
+
+      
+
+    
 
     
 
@@ -548,7 +615,7 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="172 words">1 min
+  title="222 words">1 min
      read</span>
 
 
@@ -571,15 +638,22 @@ a dedicated Orange Pi, reciever and antenna.</p>
 
 <ul>
   <li>OrangePi One (radio1)</li>
-  <li>RTL-SDR (FightAware Branded)</li>
-  <li>¼λ Mini Whip (trimmed supplied)</li>
+  <li><a href="https://amzn.to/3klzocS">RTL Software Defined Radio</a></li>
+  <li>¼λ Mini Whip (trimmed supplied antenna)</li>
 </ul>
+
+<p>The first task was to take the mini magnetic mount antenna and fix it.  We do this by trimming it 
+down to an exact ¼ wavelength required for 1090Mhz reception - or 69mm to the base or ground plane.</p>
 
 <p><img data-proofer-ignore data-src="/posts/adsb/antenna-1.jpg" alt="1/4 Wavelength mini-whip" /></p>
 
 <p>Antenna is currently mounted outside my bedroom window and is operating without a ground plane,
 the next thing I plan to rectify to improve.  While located along a north facing wall of a inner
 city apartment building; this antenna currently provides a reasonable range.</p>
+
+<p>A typical 48 hours of flight paths looks like:</p>
+
+<p><img data-proofer-ignore data-src="/posts/adsb/map.jpg" alt="A typical 48 hours" /></p>
 
 <h2 id="software-running">Software Running</h2>
 
@@ -824,6 +898,11 @@ MQTT and the smarthome projects; the client/server model was taken for ADS-B Mon
     
     
     
+  
+    
+    
+    
+    
       
         
         
@@ -843,8 +922,6 @@ MQTT and the smarthome projects; the client/server model was taken for ADS-B Mon
     
     
     
-      
-    
   
     
     
@@ -864,13 +941,6 @@ MQTT and the smarthome projects; the client/server model was taken for ADS-B Mon
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1114,10 +1184,10 @@ MQTT and the smarthome projects; the client/server model was taken for ADS-B Mon
         <a class="post-tag" href="/tags/homeassistant/">homeassistant</a>
       
         
-        <a class="post-tag" href="/tags/sdr/">sdr</a>
+        <a class="post-tag" href="/tags/smarthome/">smarthome</a>
       
         
-        <a class="post-tag" href="/tags/smarthome/">smarthome</a>
+        <a class="post-tag" href="/tags/sdr/">sdr</a>
       
         
         <a class="post-tag" href="/tags/esp/">esp</a>
@@ -1239,6 +1309,19 @@ MQTT and the smarthome projects; the client/server model was taken for ADS-B Mon
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
     
   
 
@@ -1290,12 +1373,6 @@ MQTT and the smarthome projects; the client/server model was taken for ADS-B Mon
 
 
 
-  
-    
-    
-      
-      
-    
   
     
     
@@ -1394,7 +1471,7 @@ Warning: This is a work in progress
       
       
       <div class="card">
-        <a href="/posts/aqua-mon/">
+        <a href="/posts/xiaomi-lights/">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1407,10 +1484,10 @@ Warning: This is a work in progress
 
 
 <span class="timeago small"
-  >Oct 29<i class="unloaded">2021-10-29T00:00:00+11:00</i>
+  >Nov  9<i class="unloaded">2021-11-09T00:00:00+11:00</i>
 </span>
 
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Aquarium Monitor ESP8266/MQTT</h3>
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Xiaomi Aqara Button Homeassistant Blueprint</h3>
             <div class="text-muted small">
               <p>
                 
@@ -1419,8 +1496,14 @@ Warning: This is a work in progress
 
 
 
-                
+                Actions
 
+I love these Xiami buttons and used them to replace all of the light switches in 
+the house, each button is configured so that:
+
+
+  Single tap - nearest light
+  Double tap - next nearest l...
               </p>
             </div>
           </div>
@@ -1587,6 +1670,11 @@ Warning: This is a work in progress
     
     
     
+  
+    
+    
+    
+    
       
         
         
@@ -1606,8 +1694,6 @@ Warning: This is a work in progress
     
     
     
-      
-    
   
     
     
@@ -1627,13 +1713,6 @@ Warning: This is a work in progress
     
     
     
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1872,10 +1951,10 @@ Warning: This is a work in progress
         <a class="post-tag" href="/tags/homeassistant/">homeassistant</a>
       
         
-        <a class="post-tag" href="/tags/sdr/">sdr</a>
+        <a class="post-tag" href="/tags/smarthome/">smarthome</a>
       
         
-        <a class="post-tag" href="/tags/smarthome/">smarthome</a>
+        <a class="post-tag" href="/tags/sdr/">sdr</a>
       
         
         <a class="post-tag" href="/tags/esp/">esp</a>

@@ -1,0 +1,143 @@
+blueprint:
+  name: Xiaomi Button Lights
+  description: Control things from the Xiaomi Switches
+  domain: automation
+
+  input:
+    single_light:
+      name: Single Tap Light
+      description: Light to Control on Single Tap
+      selector:
+        target:
+          entity:
+            domain: light
+
+    double_light:
+      name: Double Tap Light
+      description: Light to control on Double Tap
+      selector:
+        target:
+          entity:
+            domain: light
+
+    light_switch:
+      name: Light Switch 
+      description: Light Switch Entity
+      selector:
+        target:
+          entity:
+            domain: binary_sensor
+
+    default_brightness:
+      name: Default Brightness
+      description: Single/Double Tap Brightness Value (Percent)
+      default: 60
+      selector:
+        number:
+          min: 20
+          max: 100
+          unit_of_measurement: percent
+
+    bright_brightness:
+      name: Bright Brightness
+      description: Long Tap Brightness Value (Percent)
+      default: 60
+      selector:
+        number:
+          min: 20
+          max: 100
+          unit_of_measurement: percent
+
+mode: queued
+max_exceeded: silent
+
+trigger:
+  - platform: event 
+    event_type:
+      - xiaomi_aqara.click
+
+variables:
+  light_switch: !input light_switch
+  single_light: !input single_light
+  double_light: !input double_light
+  bright_brightness: !input bright_brightness
+  default_brightness: !input default_brightness
+  
+
+condition:
+  - condition: template
+    value_template: "{{ trigger.event.data is defined }}"
+
+  - condition: template
+    value_template: "{{ trigger.event.data.entity_id in light_switch.entity_id }}"
+
+action:
+  - variables:
+      click_type: "{{ trigger.event.data.click_type }}"
+      current_state: >
+        {% if trigger.event.data.click_type == 'single' %}
+        {{ states[single_light.entity_id].state }}
+        {% elif trigger.event.data.click_type == 'double' %}
+        {{ states[double_light.entity_id].state }}
+        {% endif %}
+
+  - choose:
+
+    - conditions:
+        - condition: template
+          value_template: "{{ click_type == 'single' or click_type == 'double'}}"
+
+      sequence:
+        - choose:
+            - conditions: "{{ click_type == 'single' and current_state == 'on' }}"
+              sequence:
+                - service: light.turn_off
+                  target: !input single_light
+
+            - conditions: "{{ click_type == 'single' and current_state == 'off' }}"
+              sequence:
+                - service: light.turn_on
+                  target: !input single_light
+                  data:
+                    brightness_pct: "{{ default_brightness }}"
+                    
+            - conditions: "{{ click_type == 'double' and current_state == 'on' }}"
+              sequence:
+                - service: light.turn_off
+                  target: !input double_light
+
+            - conditions: "{{ click_type == 'double' and current_state == 'off' }}"
+              sequence:
+                - service: light.turn_on
+                  target: !input double_light
+                  data:
+                    brightness_pct: "{{ default_brightness }}"
+
+
+    - conditions:
+        - condition: template
+          value_template: "{{ click_type == 'long_click_press' }}"
+
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: "{{ states[double_light.entity_id].state == 'on' }}"
+
+              sequence:
+                - service: light.turn_on
+                  target: !input double_light
+                  data:
+                    brightness_pct: "{{ bright_brightness }}"
+
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: "{{ states[single_light.entity_id].state == 'on' }}"
+
+              sequence:
+                - service: light.turn_on
+                  target: !input single_light
+                  data:
+                    brightness_pct: "{{ bright_brightness }}"
+

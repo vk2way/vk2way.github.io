@@ -1,6 +1,21 @@
 [
   
   {
+    "title": "Xiaomi Aqara Button Homeassistant Blueprint",
+    "url": "/posts/xiaomi-lights/",
+    "categories": "Smart Home",
+    "tags": "smarthome, homeassistant",
+    "date": "2021-11-09 00:00:00 +1100",
+    
+
+
+
+
+
+    "snippet": "ActionsI love these Xiami buttons and used them to replace all of the light switches in the house, each button is configured so that:  Single tap - nearest light  Double tap - next nearest light  Long press - make any light on bright (or brighten both if both off)The blueprint supports any lighting entities/areas or devices as the two targetdevices; any button as the input, however it must contain the ‘click_type’ attributewith a value of ‘single’, ‘double’ or ‘long_click_press’, in the event data, while it may work with other buttons it will always work best with Xiaomi Aqara buttons.Products required  Xiaomi Aqara ZigBee Buttons  Xiaomi Aqara ZigBee GatewayI strongly encourage folks to consider a full DIY ZigBee solution utilising aUSB ZigBee radio, along the lines of  ConBee Universal USB ZigBee RadioImport this BlueprintImport this Blueprint to your Home Assistant instance using the URL:  https://vk2way.id.au/posts/xiaomi-lights/xiaomi_lights.yaml"
+  },
+  
+  {
     "title": "PrettyFly ADS-B Reporting",
     "url": "/posts/prettyfly/",
     "categories": "Radio, ADS-B",
@@ -42,7 +57,7 @@
 
 
 
-    "snippet": "InfracodersProjects Mentioned  Welcome to my Smart Home  Aquarium Monitoring ESP8266"
+    "snippet": "InfracodersProjects Mentioned  Welcome to my Smart Home  Xiaomi Button Blueprint  Aquarium Monitoring ESP8266"
   },
   
   {
@@ -72,7 +87,7 @@
 
 
 
-    "snippet": "This is the second generation of ADS-B receiver running at my station; the first generation was located on my balcony and not capable of 24x7 operation; this has since been relocated witha dedicated Orange Pi, reciever and antenna.Current ADS-B Receiver setup:  OrangePi One (radio1)  RTL-SDR (FightAware Branded)  ¼λ Mini Whip (trimmed supplied)Antenna is currently mounted outside my bedroom window and is operating without a ground plane,the next thing I plan to rectify to improve.  While located along a north facing wall of a innercity apartment building; this antenna currently provides a reasonable range.Software RunningMaking use of the current infrastructure at home including the 24x7 server controlling Home Assistant,MQTT and the smarthome projects; the client/server model was taken for ADS-B Monitoring.  On Radio SBC (Orange Pi with RTL-SDR)          Ubuntu 21.10 ARM      Dump1090-mutability      Combine1090        On Server          Ubuntu 21.10      Dump1090-mutability      Tar1090        Related Posts/Projects          PrettyFly - Prettified ADS-B reporting, work in progress.        Data Supplied to          ADS-B Hub Station VK2WAY/SYD1      Fightware - FlyByNightSydney      OpenSky Network      FlightRadar 24 (Radar T-YMCO1)      "
+    "snippet": "This is the second generation of ADS-B receiver running at my station; the first generation was located on my balcony and not capable of 24x7 operation; this has since been relocated witha dedicated Orange Pi, reciever and antenna.Current ADS-B Receiver setup:  OrangePi One (radio1)  RTL Software Defined Radio  ¼λ Mini Whip (trimmed supplied antenna)The first task was to take the mini magnetic mount antenna and fix it.  We do this by trimming it down to an exact ¼ wavelength required for 1090Mhz reception - or 69mm to the base or ground plane.Antenna is currently mounted outside my bedroom window and is operating without a ground plane,the next thing I plan to rectify to improve.  While located along a north facing wall of a innercity apartment building; this antenna currently provides a reasonable range.A typical 48 hours of flight paths looks like:Software RunningMaking use of the current infrastructure at home including the 24x7 server controlling Home Assistant,MQTT and the smarthome projects; the client/server model was taken for ADS-B Monitoring.  On Radio SBC (Orange Pi with RTL-SDR)          Ubuntu 21.10 ARM      Dump1090-mutability      Combine1090        On Server          Ubuntu 21.10      Dump1090-mutability      Tar1090        Related Posts/Projects          PrettyFly - Prettified ADS-B reporting, work in progress.        Data Supplied to          ADS-B Hub Station VK2WAY/SYD1      Fightware - FlyByNightSydney      OpenSky Network      FlightRadar 24 (Radar T-YMCO1)      "
   },
   
   {

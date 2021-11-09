@@ -4,7 +4,7 @@
   <id>https://vk2way.id.au/</id>
   <title>VK2WAY</title>
   <subtitle></subtitle>
-  <updated>2021-11-09T18:12:28+11:00</updated>
+  <updated>2021-11-09T23:30:06+11:00</updated>
   <author>
     <name>Jared Quinn</name>
     <uri>https://vk2way.id.au/</uri>
@@ -17,6 +17,52 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Xiaomi Aqara Button Homeassistant Blueprint</title>
+    <link href="https://vk2way.id.au/posts/xiaomi-lights/" rel="alternate" type="text/html" title="Xiaomi Aqara Button Homeassistant Blueprint" />
+    <published>2021-11-09T00:00:00+11:00</published>
+  
+    <updated>2021-11-09T00:00:00+11:00</updated>
+  
+    <id>https://vk2way.id.au/posts/xiaomi-lights/</id>
+    <content src="https://vk2way.id.au/posts/xiaomi-lights/" />
+    <author>
+      <name>Jared Quinn</name>
+    </author>
+
+  
+    
+    <category term="Smart Home" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Actions
+
+I love these Xiami buttons and used them to replace all of the light switches in 
+the house, each button is configured so that:
+
+
+  Single tap - nearest light
+  Double tap - next nearest light
+  Long press - make any light on bright (or brighten both if both off)
+
+
+The blueprint supports any lighting entities/areas or devices as the two target
+devices; any button as the input, however ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -131,6 +177,7 @@ Projects Mentioned
 
 
   Welcome to my Smart Home
+  Xiaomi Button Blueprint
   Aquarium Monitoring ESP8266
 
 
@@ -170,56 +217,6 @@ Projects Mentioned
 
       
 
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>My ADSB Setup</title>
-    <link href="https://vk2way.id.au/posts/adsb/" rel="alternate" type="text/html" title="My ADSB Setup" />
-    <published>2021-10-26T00:00:00+11:00</published>
-  
-    <updated>2021-10-26T00:00:00+11:00</updated>
-  
-    <id>https://vk2way.id.au/posts/adsb/</id>
-    <content src="https://vk2way.id.au/posts/adsb/" />
-    <author>
-      <name>Jared Quinn</name>
-    </author>
-
-  
-    
-    <category term="Radio" />
-    
-    <category term="ADS-B" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      This is the second generation of ADS-B receiver running at my station; the first generation was 
-located on my balcony and not capable of 24x7 operation; this has since been relocated with
-a dedicated Orange Pi, reciever and antenna.
-
-Current ADS-B Receiver setup:
-
-
-  OrangePi One (radio1)
-  RTL-SDR (FightAware Branded)
-  ¼λ Mini Whip (trimmed supplied)
-
-
-
-
-Antenna is currently mounted outside ...
     </summary>
   
 
