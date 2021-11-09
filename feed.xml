@@ -4,7 +4,7 @@
   <id>https://vk2way.id.au/</id>
   <title>VK2WAY</title>
   <subtitle></subtitle>
-  <updated>2021-11-09T23:46:39+11:00</updated>
+  <updated>2021-11-09T23:59:00+11:00</updated>
   <author>
     <name>Jared Quinn</name>
     <uri>https://vk2way.id.au/</uri>
@@ -215,10 +215,13 @@ Projects Mentioned
 
 
 
-      Software Ecosystem
+      
+
+Software Ecosystem
 
 
   Ubuntu 21.10 on Intel NUC
+  Homeassistant (latest)
   Mosquitto MQTT Broker
 
 
@@ -235,8 +238,7 @@ Smart Home Devices
   Xiaomi Aqara Gateway Night Light
   Xiaomi Aqara Smart Button (x3)
   Xiaomi Aqara Dual Button v2
-  Xiaomi Aqara Temperature &amp;amp; Humidity Sensor (x2)
- ...
+  Xiaomi Aqara Temperature &amp;...
     </summary>
   
 
