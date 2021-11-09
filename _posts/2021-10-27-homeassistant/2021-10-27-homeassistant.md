@@ -7,9 +7,12 @@ tags:
 - homeassistant
 ---
 
+![Main Controls]({{page.url}}screenshot.jpg)
+
 ## Software Ecosystem
 
 * Ubuntu 21.10 on Intel NUC
+* Homeassistant (latest)
 * Mosquitto MQTT Broker
 
 ## Smart Home Devices
@@ -56,6 +59,7 @@ tags:
 * Dangerous Prototypes USB IRToy (Infrared Recevier/Sender)
 * Bluetooth Remote Control (for Lights)
 
+![Media Controls]({{page.url}}media.jpg)
 
 
 
