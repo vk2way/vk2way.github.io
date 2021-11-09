@@ -12,7 +12,7 @@
 
 
 
-    "snippet": ""
+    "snippet": "PrettyFlyWarning: This is a work in progress"
   },
   
   {
@@ -72,7 +72,7 @@
 
 
 
-    "snippet": ""
+    "snippet": "This is the second generation of ADS-B receiver running at my station; the first generation was located on my balcony and not capable of 24x7 operation; this has since been relocated witha dedicated Orange Pi, reciever and antenna.Current ADS-B Receiver setup:  OrangePi One (radio1)  RTL-SDR (FightAware Branded)  ¼λ Mini Whip (trimmed supplied)Antenna is currently mounted outside my bedroom window and is operating without a ground plane,the next thing I plan to rectify to improve.  While located along a north facing wall of a innercity apartment building; this antenna currently provides a reasonable range.Software RunningMaking use of the current infrastructure at home including the 24x7 server controlling Home Assistant,MQTT and the smarthome projects; the client/server model was taken for ADS-B Monitoring.  On Radio SBC (Orange Pi with RTL-SDR)          Ubuntu 21.10 ARM      Dump1090-mutability      Combine1090        On Server          Ubuntu 21.10      Dump1090-mutability      Tar1090        Related Posts/Projects          PrettyFly - Prettified ADS-B reporting, work in progress.        Data Supplied to          ADS-B Hub Station VK2WAY/SYD1      Fightware - FlyByNightSydney      OpenSky Network      FlightRadar 24 (Radar T-YMCO1)      "
   },
   
   {

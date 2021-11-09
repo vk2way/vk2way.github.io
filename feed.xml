@@ -4,7 +4,7 @@
   <id>https://vk2way.id.au/</id>
   <title>VK2WAY</title>
   <subtitle></subtitle>
-  <updated>2021-11-08T20:08:36+11:00</updated>
+  <updated>2021-11-09T18:12:28+11:00</updated>
   <author>
     <name>Jared Quinn</name>
     <uri>https://vk2way.id.au/</uri>
@@ -48,7 +48,10 @@
 
 
 
-      
+      PrettyFly
+
+Warning: This is a work in progress
+
 
     </summary>
   
@@ -202,8 +205,21 @@ Projects Mentioned
 
 
 
-      
+      This is the second generation of ADS-B receiver running at my station; the first generation was 
+located on my balcony and not capable of 24x7 operation; this has since been relocated with
+a dedicated Orange Pi, reciever and antenna.
 
+Current ADS-B Receiver setup:
+
+
+  OrangePi One (radio1)
+  RTL-SDR (FightAware Branded)
+  ¼λ Mini Whip (trimmed supplied)
+
+
+
+
+Antenna is currently mounted outside ...
     </summary>
   
 

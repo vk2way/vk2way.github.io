@@ -38,6 +38,8 @@
 <meta name="generator" content="Jekyll v4.2.1" />
 <meta property="og:title" content="My ADSB Setup" />
 <meta property="og:locale" content="en" />
+<meta name="description" content="This is the second generation of ADS-B receiver running at my station; the first generation was located on my balcony and not capable of 24x7 operation; this has since been relocated with a dedicated Orange Pi, reciever and antenna." />
+<meta property="og:description" content="This is the second generation of ADS-B receiver running at my station; the first generation was located on my balcony and not capable of 24x7 operation; this has since been relocated with a dedicated Orange Pi, reciever and antenna." />
 <link rel="canonical" href="https://vk2way.id.au/posts/adsb/" />
 <meta property="og:url" content="https://vk2way.id.au/posts/adsb/" />
 <meta property="og:site_name" content="VK2WAY" />
@@ -47,7 +49,7 @@
 <meta property="twitter:title" content="My ADSB Setup" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://vk2way.id.au/posts/adsb/"},"headline":"My ADSB Setup","url":"https://vk2way.id.au/posts/adsb/","dateModified":"2021-10-26T00:00:00+11:00","datePublished":"2021-10-26T00:00:00+11:00","@context":"https://schema.org"}</script>
+{"description":"This is the second generation of ADS-B receiver running at my station; the first generation was located on my balcony and not capable of 24x7 operation; this has since been relocated with a dedicated Orange Pi, reciever and antenna.","@type":"BlogPosting","headline":"My ADSB Setup","dateModified":"2021-10-26T00:00:00+11:00","datePublished":"2021-10-26T00:00:00+11:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://vk2way.id.au/posts/adsb/"},"url":"https://vk2way.id.au/posts/adsb/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -339,6 +341,141 @@
 
 
 
+  <!-- add CDN prefix if it exists -->
+
+  
+
+  
+
+  <!-- lazy-load images <https://github.com/ApoorvSaxena/lozad.js#usage> -->
+
+  
+
+  <!-- add image placehoder to prevent layout reflow -->
+
+  
+
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+
+      
+
+    
+      
+      
+
+      
+
+      
+
+    
+      
+      
+
+      
+
+      
+
+    
+      
+      
+
+      
+
+      
+
+    
+      
+      
+
+      
+
+      
+
+    
+      
+      
+
+      
+
+      
+
+    
+
+    
+
+  
+    
+
+    
+    
+    
+
+    
+      
+      
+
+      
+
+      
+
+    
+      
+      
+
+      
+
+      
+
+    
+      
+      
+
+      
+
+      
+
+    
+      
+      
+
+      
+
+      
+
+    
+      
+      
+
+      
+
+      
+
+    
+
+    
+
+  
+
+  
+
+
+
 <!-- Add header for code snippets -->
 
 
@@ -411,7 +548,7 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="0 words">1 min
+  title="172 words">1 min
      read</span>
 
 
@@ -426,7 +563,61 @@
 
         
 
-        
+        <p>This is the second generation of ADS-B receiver running at my station; the first generation was 
+located on my balcony and not capable of 24x7 operation; this has since been relocated with
+a dedicated Orange Pi, reciever and antenna.</p>
+
+<h2 id="current-ads-b-receiver-setup">Current ADS-B Receiver setup:</h2>
+
+<ul>
+  <li>OrangePi One (radio1)</li>
+  <li>RTL-SDR (FightAware Branded)</li>
+  <li>¼λ Mini Whip (trimmed supplied)</li>
+</ul>
+
+<p><img data-proofer-ignore data-src="/posts/adsb/antenna-1.jpg" alt="1/4 Wavelength mini-whip" /></p>
+
+<p>Antenna is currently mounted outside my bedroom window and is operating without a ground plane,
+the next thing I plan to rectify to improve.  While located along a north facing wall of a inner
+city apartment building; this antenna currently provides a reasonable range.</p>
+
+<h2 id="software-running">Software Running</h2>
+
+<p>Making use of the current infrastructure at home including the 24x7 server controlling Home Assistant,
+MQTT and the smarthome projects; the client/server model was taken for ADS-B Monitoring.</p>
+
+<ul>
+  <li>On Radio SBC (Orange Pi with RTL-SDR)
+    <ul>
+      <li>Ubuntu 21.10 ARM</li>
+      <li><a href="https://github.com/adsbxchange/dump1090-mutability">Dump1090-mutability</a></li>
+      <li><a href="https://github.com/wiedehopf/combine1090">Combine1090</a></li>
+    </ul>
+  </li>
+  <li>On Server
+    <ul>
+      <li>Ubuntu 21.10</li>
+      <li><a href="https://github.com/adsbxchange/dump1090-mutability">Dump1090-mutability</a></li>
+      <li><a href="https://github.com/wiedehopf/tar1090">Tar1090</a></li>
+    </ul>
+  </li>
+  <li>Related Posts/Projects
+    <ul>
+      <li><a href="posts/prettyfly/">PrettyFly</a> - Prettified ADS-B reporting, work in progress.</li>
+    </ul>
+  </li>
+  <li>Data Supplied to
+    <ul>
+      <li><a href="https://www.adsbhub.org/station.php?id=2907">ADS-B Hub Station VK2WAY/SYD1</a></li>
+      <li><a href="https://flightaware.com/adsb/stats/user/FlyByNightSydney">Fightware - FlyByNightSydney</a></li>
+      <li><a href="https://opensky-network.org/receiver-profile?s=-1408232334">OpenSky Network</a></li>
+      <li>FlightRadar 24 (Radar T-YMCO1)</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img data-proofer-ignore data-src="/posts/adsb/sbc.jpg" alt="Orange Pi" /></p>
+
 
 
       </div>
@@ -956,6 +1147,13 @@
   </div> <!-- .access -->
 
   
+    <!-- BS-toc.js will be loaded at medium priority -->
+    <script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script>
+    <div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+      <span class="pl-3 pt-2 mb-2">Contents</span>
+      <nav id="toc" data-toggle="toc"></nav>
+    </div>
+  
 
 </div> <!-- #panel-wrapper -->
 
@@ -1182,7 +1380,10 @@
 
 
 
-                
+                PrettyFly
+
+Warning: This is a work in progress
+
 
               </p>
             </div>
