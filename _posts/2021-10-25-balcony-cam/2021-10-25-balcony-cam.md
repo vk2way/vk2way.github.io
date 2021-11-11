@@ -7,6 +7,7 @@ tags:
 - sdr
 ---
 
+## Project Details Coming Soon
 
 ![image tooltip here]({{page.url}}/enclosure.jpg)
 
