@@ -9,21 +9,25 @@ order: 0
   Welcome, a little more about me and where you can find even more:
 </p>
 
+I'm VK2WAY, located in [Maidenhead](https://en.wikipedia.org/wiki/Maidenhead_Locator_System)↗ /QTH/IARU grid location 
+[QF56oc]([https://www.karhukoti.com/maidenhead-grid-square-locator/?grid=QF56oc)↗.
+
 Have questions or suggestions? Feel free to:
 
-* [open an issue on GitHub](https://github.com/vk2way/vk2way.github.io/issues/new) 
-* [Ask me on Twitter](https://twitter.com/jaredquinn).
+* [open an issue on GitHub](https://github.com/vk2way/vk2way.github.io/issues/new)↗ 
+* [Ask me on Twitter](https://twitter.com/jaredquinn)↗.
+
 
 ## The Technology
 
-* Site generated using [Jekyll](http://jekyllrb.com)
-* Developed and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Vi IMproved](https://www.vim.org/), the only editor
+* Site generated using [Jekyll](http://jekyllrb.com)↗
+* Developed and hosted for free on [GitHub Pages](https://pages.github.com)↗
+* Coded with [Vi IMproved](https://www.vim.org/)↗, the only editor
 
 ## The Small Print
 
 <p class="message">
-All content on this site is licensed under the Creative Commons Attribution 4.0 International License.  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+All content on this site is licensed under the Creative Commons Attribution 4.0 International License.  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>↗.
 </p>
 
 In summary this license grants everyone the right to:
@@ -34,7 +38,10 @@ In summary this license grants everyone the right to:
 * Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
 
-## Affiliate Links
+## Links
 
 Affiliate links are used across this site and help support the site and it's author. Affiliate links across this site are identified with a shopping cart emoji 🛒.
+
+External links across the site are represented with the ↗ emoji.
+
 

@@ -11,16 +11,19 @@ order: 200
 
 Have questions or suggestions? Feel free to:
 
-* [open an issue on GitHub](https://github.com/vk2way/vk2way.github.io/issues/new) 
-* [Ask me on Twitter](https://twitter.com/jaredquinn).
+* [open an issue on GitHub](https://github.com/vk2way/vk2way.github.io/issues/new)↗
+* [Ask me on Twitter](https://twitter.com/jaredquinn)↗
 
 ## Radio Frequency
+
+I'm VK2WAY, located in [Maidenhead](https://en.wikipedia.org/wiki/Maidenhead_Locator_System)↗ /QTH/IARU grid location 
+[QF56oc]([https://www.karhukoti.com/maidenhead-grid-square-locator/?grid=QF56oc)↗
 
 ### Local Repeater
 
 You can usually find me monitoring the Waverley ARS Repeater on 2m and 70cm:
 
-* [VK2ROT Paddington Repeater](http://vk2rot.vk2bv.org)
+* [VK2ROT Paddington Repeater](http://vk2rot.vk2bv.org)↗
   * Sydney: 438.5755 FM (-5Mhz) CTCSS 91.5hz
   * Sydney: 147.025 FM (+600) CTCSS 91.5hz
   * IRLP #6250
@@ -31,7 +34,7 @@ You can usually find me monitoring the Waverley ARS Repeater on 2m and 70cm:
 
 #### Brandmeister
 
-The [Brandmeister Network](https://brandmeister.network/) is a global, decentralised network of digital-equipped radio operators:
+The [Brandmeister Network](https://brandmeister.network/)↗ is a global, decentralised network of digital-equipped radio operators:
 
 You can often find me monitoring Brandmeister talk groups
 
@@ -40,8 +43,8 @@ You can often find me monitoring Brandmeister talk groups
 
 ## Social Media
 
-* [Twitter](https://twitter.com/jaredquinn)
-* [LinkedIn](https://linkedin.com/in/jaredquinn)
+* [Twitter](https://twitter.com/jaredquinn)↗
+* [LinkedIn](https://linkedin.com/in/jaredquinn)↗
 
 ## Zello
 
