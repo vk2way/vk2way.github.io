@@ -27,7 +27,7 @@
 
 
 
-    "snippet": "PrettyFlyWarning: This is a work in progress"
+    "snippet": "Warning: This is a work in progressPrettyFly is a first attempt at turning ADS-B data into interesting reports; it depends on Tar1090 from wiedehopf.  PrettyFly is currently onlyable to travel back in time the duration of tar1090’s flight path archive.Project source code: PrettyFly"
   },
   
   {
@@ -42,7 +42,7 @@
 
 
 
-    "snippet": ""
+    "snippet": "Coming Soon"
   },
   
   {
@@ -102,7 +102,7 @@
 
 
 
-    "snippet": ""
+    "snippet": "Project Details Coming Soon"
   },
   
   {

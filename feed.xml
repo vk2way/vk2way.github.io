@@ -4,7 +4,7 @@
   <id>https://vk2way.id.au/</id>
   <title>VK2WAY</title>
   <subtitle></subtitle>
-  <updated>2021-11-09T23:59:00+11:00</updated>
+  <updated>2021-11-11T16:07:32+11:00</updated>
   <author>
     <name>Jared Quinn</name>
     <uri>https://vk2way.id.au/</uri>
@@ -94,9 +94,13 @@ devices; any button as the input, however ...
 
 
 
-      PrettyFly
+      Warning: This is a work in progress
 
-Warning: This is a work in progress
+PrettyFly is a first attempt at turning ADS-B data into interesting reports; it depends on 
+Tar1090 from wiedehopf.  PrettyFly is currently only
+able to travel back in time the duration of tar1090’s flight path archive.
+
+Project source code: PrettyFly
 
 
     </summary>
@@ -134,7 +138,8 @@ Warning: This is a work in progress
 
 
 
-      
+      Coming Soon
+
 
     </summary>
   

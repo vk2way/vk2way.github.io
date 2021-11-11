@@ -25,6 +25,8 @@ const resource = [
   
     '/archives/',
   
+    '/contact/',
+  
 
   /* --- Favicons --- */
   
