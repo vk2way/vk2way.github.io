@@ -36,5 +36,5 @@ In summary this license grants everyone the right to:
 
 ## Affiliate Links
 
-Affiliate links are used across this site and help support the site and it's author. 
+Affiliate links are used across this site and help support the site and it's author. Affiliate links across this site are identified with a shopping cart emoji 🛒.
 

@@ -23,13 +23,13 @@ may work with other buttons it will always work best with Xiaomi Aqara buttons.
 
 ## Products required
 
-* [Xiaomi Aqara ZigBee Buttons](https://amzn.to/3klBb1w)
-* [Xiaomi Aqara ZigBee Gateway](https://amzn.to/3bVVKgs)
+* [Xiaomi Aqara ZigBee Buttons](https://amzn.to/3klBb1w) 🛒
+* [Xiaomi Aqara ZigBee Gateway](https://amzn.to/3bVVKgs) 🛒
 
 I strongly encourage folks to consider a full DIY ZigBee solution utilising a
 USB ZigBee radio, along the lines of
 
-* [ConBee Universal USB ZigBee Radio](https://amzn.to/3H4IioG)
+* [ConBee Universal USB ZigBee Radio](https://amzn.to/3H4IioG) 🛒
 
 # Import this Blueprint
 
