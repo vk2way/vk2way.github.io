@@ -5,12 +5,15 @@ icon: fas fa-user
 order: 0
 ---
 
-<p class="message">
-  Welcome, a little more about me and where you can find even more:
-</p>
+
+> I acknowledge the Traditional Owners of the land where I live and operate, the Gadigal of the Eora nation and pay my/our respects to Elders past and present. I celebrate the stories, culture and traditions of Aboriginal and Torres Strait Islander Elders of all communities who also work and live on this land.
+
+Welcome, a little more about me and where you can find even more:
 
 I'm VK2WAY, located in [Maidenhead](https://en.wikipedia.org/wiki/Maidenhead_Locator_System)↗ /QTH/IARU grid location 
-[QF56oc]([https://www.karhukoti.com/maidenhead-grid-square-locator/?grid=QF56oc)↗.
+[QF56oc]([https://www.karhukoti.com/maidenhead-grid-square-locator/?grid=QF56oc)↗ on *Gadigal Country* otherwise known as Sydney Australia, the most beautiful city in the world, even on a bad day:
+
+![Sydney Harbour](/assets/img/sydney.jpg)
 
 Have questions or suggestions? Feel free to:
 
