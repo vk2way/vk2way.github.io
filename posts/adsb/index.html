@@ -842,7 +842,7 @@
 
 <!-- return element -->
 <span class="readtime" data-toggle="tooltip" data-placement="bottom"
-  title="1986 words">11 min
+  title="2021 words">11 min
      read</span>
 
 
@@ -959,7 +959,7 @@ MQTT and the smarthome projects; the client/server model was taken for ADS-B Mon
 
 <p>The radio and main server are seperated in my environment purely for convenience; this also allows tar1090
 to manage a much larger dataset and more storing and development opportunities around the ads-b data; this
-details how that’s done:</p>
+details how that’s done.</p>
 
 <h2 id="the-radio">The Radio</h2>
 
@@ -976,12 +976,26 @@ details how that’s done:</p>
 <p><img data-proofer-ignore data-src="/posts/adsb/sbc.jpg" alt="Orange Pi One, Dongle and Cable" /></p>
 
 <blockquote>
-  <p>Note: A FlightAware Pro Stick is pictured below.  While I’ve had excellent results with this product, 
+  <p>Note: A FlightAware Pro Stick is pictured above.  While I’ve had excellent results with this product, 
 it is regularly unavailable. I highly recommend the Nooelec NESDR SMArt v4 SDR linked at the top of this article.</p>
 </blockquote>
 
-<p>You’ll need to follow one of the countless guides out there for getting Armbian installed on your Orange Pi 
-along with blacklisting the DVB modules so that you can use the full capabilities of the RTL dongle.</p>
+<p>If your Orange Pi is brand new or you’re new to Orange Pi and Armbian, you should get started with the <a href="https://docs.armbian.com/User-Guide_Getting-Started/">Armbian Getting Started Guide</a>↗.</p>
+
+<p>Regardles of which Linux you’re on you’ll want to make sure that the RTL DVB kernel modules are disabled to allow
+access for the RTL-SDR drivers.</p>
+
+<div file="/etc/modprobe.d/no-rtl.conf" class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span text-data="/etc/modprobe.d/no-rtl.conf"><i class="fa-fw far fa-file-code"></i></span>
+      <button aria-label="copy" title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>blacklist dvb_usb_rtl28xxu
+blacklist rtl2832
+blacklist rtl2830
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>You can rebuild the module dependency tree by running <code class="language-plaintext highlighter-rouge">sudo depmod -a</code></p>
 
 <h3 id="dump1090">Dump1090</h3>
 
