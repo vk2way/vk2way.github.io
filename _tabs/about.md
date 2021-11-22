@@ -43,7 +43,7 @@ In summary this license grants everyone the right to:
 
 ## Links
 
-Affiliate links are used across this site and help support the site and it's author. Affiliate links across this site are identified with a shopping cart emoji 🛒.
+Affiliate links are used across this site and help support the site and the projects I write about. Affiliate links across this site are identified with a shopping cart emoji 🛒.
 
 External links across the site are represented with the ↗ emoji.
 

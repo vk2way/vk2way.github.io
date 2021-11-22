@@ -9,7 +9,9 @@ tags:
 - video
 ---
 
-# Infracoders
+On 29th August 2019 I presented a talk at Sydney Infrastructure Coder's meetup "House coders":
+
+You can find more events from Sydney Infrastructure Coders at [meetup.com](https://www.meetup.com/en-AU/Infrastructure-Coders-Sydney/)↗.
 
 {% youtube pjZE0I5_LDY %}
 
