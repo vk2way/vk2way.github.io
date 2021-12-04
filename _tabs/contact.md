@@ -16,6 +16,8 @@ Have questions or suggestions? Feel free to:
 
 ## Radio Frequency
 
+View my [QRZ Page](https://qrz.com/db/VK2WAY)↗
+
 I'm VK2WAY, located in [Maidenhead](https://en.wikipedia.org/wiki/Maidenhead_Locator_System)↗ /QTH/IARU grid location 
 [QF56oc]([https://www.karhukoti.com/maidenhead-grid-square-locator/?grid=QF56oc)↗
 
@@ -30,16 +32,22 @@ You can usually find me monitoring the Waverley ARS Repeater on 2m and 70cm:
   * Echolink #725953
   * Allstar #55421
 
-### DMR
+### Peanut
 
-#### Brandmeister
+Peanut is digital hamVoIP software by PA7LIM, you can find out more at [https://www.pa7lim.nl/peanut](https://www.pa7lim.nl/peanut/).
 
-The [Brandmeister Network](https://brandmeister.network/)↗ is a global, decentralised network of digital-equipped radio operators:
+You can often find me in the aussie evening, midde of the UK day or early on the US West Coast morning on the ENGLISH or ENGLISH1 talk groups.
 
-You can often find me monitoring Brandmeister talk groups
+### EchoLink
 
-* 505 - Australia (VK)
-* 5052 - New South Wales (VK2)
+I monitor several repeaters and conferences on EchoLink most of the time; you'll most often find me at (in order of preference):
+
+* [VK2BV-R](http://vk2rot.vk2bv.org)↗ (the repeater listed above)
+* [GB3DV-R](https://www.qrz.com/db/GB3DV)↗ (South Yorkhshire, UK)
+* [\*FLORIDA\*](https://spacenetone.com)↗ NASA Communications (please don't TX, NASA is listen only)
+* [\*AUSSIE\*](http://geocities.com/vk2ex)↗ from VK2EX
+* [\*DODROPIN\*](https://dodropin.net/index.php/)↗ mostly for [PSRG](https://web.psrg.org/)↗ Evening nets
+
 
 ## Social Media
 
