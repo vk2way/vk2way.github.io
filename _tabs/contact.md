@@ -23,7 +23,7 @@ I'm VK2WAY, located in [Maidenhead](https://en.wikipedia.org/wiki/Maidenhead_Loc
 
 ### Local Repeater
 
-You can usually find me monitoring the Waverley ARS Repeater on 2m and 70cm:
+I primarilly monitor the secondary VK2BV (The Waverley Amateur Radio Society) repeater VK2ROT by both RF and VoIP when not near a radio.
 
 * [VK2ROT Paddington Repeater](http://vk2rot.vk2bv.org)↗
   * Sydney: 438.5755 FM (-5Mhz) CTCSS 91.5hz
@@ -32,11 +32,11 @@ You can usually find me monitoring the Waverley ARS Repeater on 2m and 70cm:
   * Echolink #725953
   * Allstar #55421
 
-### Peanut
+When near a radio I also monitor the primary club repeater, VK2RBV located in CBD Sydney:
 
-Peanut is digital hamVoIP software by PA7LIM, you can find out more at [https://www.pa7lim.nl/peanut](https://www.pa7lim.nl/peanut/).
-
-You can often find me in the aussie evening, midde of the UK day or early on the US West Coast morning on the ENGLISH or ENGLISH1 talk groups.
+* VK2RBV
+  * Sydney: 438.1125 FM,C4FM (-5.4Mhz) CTCSS 91.5hz
+  * Sydney: 438.775 DStar (-5Mhz) 
 
 ### EchoLink
 
@@ -48,16 +48,32 @@ I monitor several repeaters and conferences on EchoLink most of the time; you'll
 * [\*AUSSIE\*](http://geocities.com/vk2ex)↗ from VK2EX
 * [\*DODROPIN\*](https://dodropin.net/index.php/)↗ mostly for [PSRG](https://web.psrg.org/)↗ Evening nets
 
+### Hamshack Hotline and Telephone
+
+You can reach me on the following telephone numbers:
+
+* 33 000 000 30 (Hamshack Hotline)
+* +61 2 8000 8822 (Public Switched Telephone Network)
+
+### Digital Voice - DMR
+
+#### Brandmeister/VKMultiNet
+
+* RadioID 5051909 / VK2WAY
+
+##### VK MultiNet
+
+VKMulti.NET is a VK2 DMR based amateur radio network for hotspots and in the future perhaps repeaters that provides linked connectivity to other amateur radio networks brining the most popular networks into one place. Currently connected networks include VKDMR,Brandmeister,C4FM and P25 with more to follow.
+
+##### Peanut
+
+Peanut is digital hamVoIP software by PA7LIM, you can find out more at [https://www.pa7lim.nl/peanut](https://www.pa7lim.nl/peanut/).
+You can often find me in the aussie evening, midde of the UK day or early on the US West Coast morning on the ENGLISH or ENGLISH1 talk groups.
 
 ## Social Media
 
 * [Twitter](https://twitter.com/jaredquinn)↗
 * [LinkedIn](https://linkedin.com/in/jaredquinn)↗
 
-## Zello
-
-Add me on Zello, Internet Push-to-talk, search "vk2way" or use this QR Code
-
-<div style="width: 200px; height: 200px;background:url(/assets/zelloqr.jpg) no-repeat;"></div>
 
 

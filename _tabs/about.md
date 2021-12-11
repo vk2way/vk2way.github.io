@@ -43,7 +43,7 @@ In summary this license grants everyone the right to:
 
 ## Links
 
-Affiliate links are used across this site and help support the site and the projects I write about. Affiliate links across this site are identified with a shopping cart emoji 🛒.
+Affiliate links are used across this site and help support the site and the projects I write about. Affiliate links across this site are identified with a shopping cart emoji 🛒.  Why Amazon?  Trust.  When I polled a bunch of friends as to if they'd prefer I linked to AliExpress they suggested that folks who are going to use AliExpress already will and that I should point to affiliate links on Amazon for those who want convenience, faster shipping and trust.
 
 External links across the site are represented with the ↗ emoji.
 

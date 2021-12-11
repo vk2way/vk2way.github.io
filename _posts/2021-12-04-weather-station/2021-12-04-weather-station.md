@@ -10,30 +10,49 @@ While usually I try to consolidate projects to deploy fewer devices, the decisio
 project was to build it so that it would be useful for anyone wanting to build a weather station
 but also tightly integrate into my [Balcony Radio System](/posts/balcony-multi-cam).
 
-I did not want to use WiFi for this originally due to generating more RF near my antennas, 
-so a project goal of both UART and WiFi connectivity was decided and an ESP low power microcontroller
-which can be mounted inside the mast or in a small enclosure nearby was selected.  I also always have a 
+# Project Goals
+
+The first and foremost goal of this project is to replace a Holman iWeather that has been operating
+on my balcony for about 10 years with something more modern.  This uses an external 433Mhz sensor 
+providing temperature and humidity along with the same from indoors plus pressure, used to calculate
+a chance of rain and display that, along with sun and moon information with the standard clock and
+alarm.
+
+![Old Holman iWeather]({{page.url}}/holman.jpg)
+
+The replacement should provide better functionalty than the existing system, be able to integrate 
+with the smart house and most importantly provide at-a-glace display in the kitchen in a form factor
+similar to the Holman for the "cohabitation approval factor".
+
+
+
+# Parts List
+
+Parts marked with ⚙️  came from existing items in my parts store and were chosen for that reason.  
+
+* ⚙️  [ESP32 DevKit](https://amzn.to/3IbSxbo) 🛒 ($12) [ESP D32 Mini](https://amzn.to/3DqHQOy) 🛒 ($12)
+* Sensors
+  * ⚙️  [Waterproof DS18B20](https://amzn.to/31q5n50) 🛒 ($10) External Temperature 
+  * ⚙️  [BMP280](https://amzn.to/3rFoSSl) 🛒 ($13) Temperature, Humidity and Barometric Pressure 
+* Misol Weather Station Parts 
+  * ⚙️  [MS-WH-SP-WS](https://amzn.to/3xQzTkC) 🛒 ($40) Wind Speed
+  * Wind Direction (MS-WH-SP-WD)
+  * Rainfall
+
+As usual Amazon affiliate links are provided, but all of this can easily be found on AliExpress too.
+
+# ESP32
+
+I also always have a 
 pile of ESP32 or ESP8266 SoC microcontrollers on hand, while the Wemos D1 Mini (right) form factor is my preferred 
 form factor for production projects, the standard DevKit (left) with header pins is easier for prototyping and
 testing.
 
-
 ![ESP32 Wemos D1 and DevKit Formfactors]({{page.url}}/esp.png)
 
-# Parts List
-
-* [ESP32 DevKit](https://amzn.to/3IbSxbo) 🛒 ($12) [ESP D32 Mini](https://amzn.to/3DqHQOy) 🛒 ($12)
-* Sensors
-  * Temperature
-  * Humidity
-  * Barometric Pressure
-* Weather Station Sensors (MS-WH-SP-WS02)
-  * Wind Speed ($20)
-  * Wind Direction (MS-WH-SP-WD)
-  * Rainfall
-
-This project is ongoing, but now taking form with some final plans, so unlike everything to date
-on this blog it will consist of ongoing updates in parts until project completion.
+The ESP also enables this project to be used both as data source sending ASCII data over UART to the host 
+computer for processing, as I intend to use it, the final code produced will additionally support the ESP WiFi 
+networking stack and MQTT client to publish data to any network.
 
 # Windspeed Testing
 
