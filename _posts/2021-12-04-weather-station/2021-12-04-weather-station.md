@@ -1,5 +1,5 @@
 ---
-title: Weather Station
+title: APRS WX Weather Station
 layout: post
 categories: [Smart Home]
 tags:
@@ -7,96 +7,55 @@ tags:
 ---
 
 While usually I try to consolidate projects to deploy fewer devices, the decision on this 
-project was to build it so that it would be useful for anyone wanting to build a weather station
-but also tightly integrate into my [Balcony Radio System](/posts/balcony-multi-cam).
+project was to build it so that it would be useful for anyone wanting to build their own 
+weather station. 
+
+Originally this project was just to add some additional sensors to the balcony camera and
+radio system; but since it's original inception it has become an entirely standalone project.
 
 # Project Goals
 
-The first and foremost goal of this project is to replace a Holman iWeather that has been operating
-on my balcony for about 10 years with something more modern.  This uses an external 433Mhz sensor 
-providing temperature and humidity along with the same from indoors plus pressure, used to calculate
-a chance of rain and display that, along with sun and moon information with the standard clock and
-alarm.
+The initial incarnation of this project had the goal of replacing a Holman "iWeather" station
+that had been running in my apartment for over 10 years with it's 433Mhz external sensor.
 
 ![Old Holman iWeather]({{page.url}}/holman.jpg)
 
-The replacement should provide better functionalty than the existing system, be able to integrate 
-with the smart house and most importantly provide at-a-glace display in the kitchen in a form factor
-similar to the Holman for the "cohabitation approval factor".
+Since getting my radio license and playing with APRS this scope of this project expanded
+to become a fully fledged, climate-monitoring weather station collecting as much data as possible,
+while working with a friend to install a more plug-and-play version of this at his has seen the 
+project cover a range of hardware and microcontrollers.  
+
+What I'm trying to present here though is options.
 
 
+# The Software
 
-# Parts List
+Usually I would dive straight into a project's hardware, what to buy and how to build it.  The
+core of this project however is the software so that is what this article will be focussed on; 
+the hardware however is covered in two other articles depending upon how you're approaching your
+build.
 
-Parts marked with ⚙️  came from existing items in my parts store and were chosen for that reason.  
+# Controller
 
-* ⚙️  [ESP32 DevKit](https://amzn.to/3IbSxbo) 🛒 ($12) [ESP D32 Mini](https://amzn.to/3DqHQOy) 🛒 ($12)
-* Sensors
-  * ⚙️  [Waterproof DS18B20](https://amzn.to/31q5n50) 🛒 ($10) External Temperature 
-  * ⚙️  [BMP280](https://amzn.to/3rFoSSl) 🛒 ($13) Temperature, Humidity and Barometric Pressure 
-* Misol Weather Station Parts 
-  * ⚙️  [MS-WH-SP-WS](https://amzn.to/3xQzTkC) 🛒 ($40) Wind Speed
-  * Wind Direction (MS-WH-SP-WD)
-  * Rainfall
+There are several options for the controller; and building those will be separated into separate
+articles while this article focuses on the common parts between the two.
 
-As usual Amazon affiliate links are provided, but all of this can easily be found on AliExpress too.
+## The Tinkerer Approach
 
-# ESP32
+Thanks to a range of existing infrastructure within my network for smart home and other monitoring
+I opted for utilising the MQTT Bridge that was already in place for Home Assistant, as this allows
+all devices in the house to publish and/or subscribe to any "topic".   My weather station is 
+currently an aggregation of 3 devices, one off the shelf sensor and two ESP microcontrollers running
+the Arduino-based code that is published as part of this article.
 
-I also always have a 
-pile of ESP32 or ESP8266 SoC microcontrollers on hand, while the Wemos D1 Mini (right) form factor is my preferred 
-form factor for production projects, the standard DevKit (left) with header pins is easier for prototyping and
-testing.
+## The Off-the-Shelf Approach
 
-![ESP32 Wemos D1 and DevKit Formfactors]({{page.url}}/esp.png)
+Thanks to a range of existing infrastructure within my network for smart home and other monitoring
+I opted for utilising the MQTT Bridge that was already in place for Home Assistant, as this allows
+all devices in the house to publish and/or subscribe to any "topic".   My weather station is 
+currently an aggregation of 3 devices, one off the shelf sensor and two ESP microcontrollers running
+the Arduino-based code that is published as part of this article.
 
-The ESP also enables this project to be used both as data source sending ASCII data over UART to the host 
-computer for processing, as I intend to use it, the final code produced will additionally support the ESP WiFi 
-networking stack and MQTT client to publish data to any network.
 
-# Windspeed Testing
-
-Now that the radio has been working and cabled for a while, it's time to take a look at the next device that's been sitting here begging for me to take a look at for way too long; it's the anonometer.  I picked it up some time ago and didn't recall any datasheet for it, but managed to identify it as a MS-WH-SP-WD for the Misol Weather Meter, with lots of info and examples available online for it as "spare parts" are available for it from AliExpress.
-
-It simply closes a switch each rotation with each rotation representing a 2.4km/h windspeed, small and plastic:
-
-![Windspeed Meter]({{page.url}}/anom.png)
-
-Connecting the sensor to a ESP is relatively trivial;  trim off the supplied RJ11 connector and connect using GPIO12 (supply) and GPIO13 (interrupt) on the ESP32. We use a GPIO for the supply side so that later on we can programatically turn on/off the sensor, but for now we'll just leave it turned on but utilising the final pin.
-
-For testing purposes we'll just make sure our cabling works and we can trigger an interrupt function every time it trips it's switch, here's some Arduino IDE code for the test:
-```
-
-#include "Arduino.h"
-
-const byte ledPin = 2;
-const byte interruptPin = 13;
-const byte powerPin = 12;
-
-volatile byte state = LOW;
-
-void setup() {
-  delay(500);
-  Serial.begin(115200);
-  
-  pinMode(ledPin, OUTPUT);
-  pinMode(interruptPin, INPUT_PULLDOWN);
-  pinMode(powerPin, OUTPUT);
-  digitalWrite(powerPin, HIGH);
-  attachInterrupt(digitalPinToInterrupt(interruptPin), blink, CHANGE);
-}
-
-void loop() {
-  digitalWrite(ledPin, state);
-}
-
-void blink() {
-  if(state) { Serial.print("PING\n"); }
-  state = !state;
-}
-```
-{: file="test.ino" }
-
-This isn't yet doing any timing or math to calculate windspeed; it's simply a test to ensure everything can work the way we want it to before we move on to the other sensors.
 
 
